@@ -12,11 +12,11 @@ with open('tickersymbols.txt', 'r') as tickers:
     symbols = tickers.read().split('\n')
     symbols = list(filter(None, symbols))
 
-tqdmsymbols = tqdm(symbols)
-
 print()
 print(f'plotting {dates} performance of {symbols}')
 print()
+
+tqdmsymbols = tqdm(symbols)
 
 dfs = []
 for symbol in tqdmsymbols:
