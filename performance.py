@@ -14,7 +14,9 @@ with open('tickersymbols.txt', 'r') as tickers:
 
 tqdmsymbols = tqdm(symbols)
 
+print()
 print(f'plotting {dates} performance of {symbols}')
+print()
 
 dfs = []
 for symbol in tqdmsymbols:
